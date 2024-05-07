@@ -1,0 +1,119 @@
+$primary: #1565C0;
+$dark: #141518;
+
+@mixin base_btn($bg: $dark) {
+    box-shadow: 5px 5px 10px black;
+    background-color: $bg;
+    border-radius: 16px;
+    font-size: 30px;
+    color: white !important;
+    width: 70px;
+    height: 70px;
+    margin: 4px;
+    transition: all ease 100ms;
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        box-shadow: none;
+        border: 1px solid $primary;
+        transform: translate(5px,5px)
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.cal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #17181C;
+    margin: auto;
+    width:340px;
+    
+}
+
+.btn_base {
+    @include base_btn;
+}
+
+.btn_primary {
+    @include base_btn($primary);
+}
+
+.btn_outline_primary {
+    @include base_btn($dark);
+    border: 1px solid $primary !important;
+}
+
+.input_base{
+    box-shadow: 5px 5px 10px black;
+    background-color:beige;
+    border-radius: 13px;
+    font-size: 30px;
+    cursor: default;
+    outline: none;
+    color: $dark ;
+    margin: auto;
+    padding: 5px;
+    height: 70px;
+    width: 100%;
+}
+
+.prev_num{
+    position: relative;
+    margin-right: auto;
+    direction: rtl;
+    color: #ddd;
+    height: 20px;
+    right: 20%;
+    top: -5px;
+}
+
+.result_input_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    span{
+        position: absolute;
+        right: -10%;
+        color: #ddd;
+        font-size: 2rem;
+    }
+}
+
+.eghamat24_logo_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    img{
+        opacity: 0;
+        width: 100%;
+        animation: show_effect ease 1s 1s forwards;
+        @keyframes show_effect {
+            from {
+                opacity: 0;
+                /* transform: translateX(100px); */
+            }
+        
+            to {
+                opacity: 1;
+                /* transform: translateX(0px); */
+            }
+        }
+    }
+}

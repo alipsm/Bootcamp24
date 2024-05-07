@@ -1,0 +1,68 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body id="root">
+    <div class="cal_container">
+        <p id="Prev_Number" class="prev_num"></p>
+        <div class="result_input_container">
+            <span id="Marks"></span>
+            <input type="text" name="" id="View_Input" class="input_base" dir="rtl" readonly>
+        </div>
+        <br>
+        <main>
+            <div class="eghamat24_logo_container">
+                <input type="button" value="C" onclick="operation('C')" class="btn_outline_primary">
+                <div id="Eghamat24_logo">
+                    <img src="./assets/img/primary_logo.png" alt="">
+                </div>	
+                <input type="button" value="<-" onclick="operation('<-')" class="btn_outline_primary">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="operation(7)" class="btn number-key">
+                <input type="button" value="8" onclick="operation(8)" class="btn number-key">
+                <input type="button" value="9" onclick="operation(9)" class="btn number-key">
+                <input type="button" value="x" onclick="operation('*')" class="btn_outline_primary">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="operation(4)" class="btn number-key">
+                <input type="button" value="5" onclick="operation(5)" class="btn number-key">
+                <input type="button" value="6" onclick="operation(6)" class="btn number-key">
+                <input type="button" value="-" onclick="operation('-')" class="  btn_outline_primary">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="operation(1)" class="btn number-key">
+                <input type="button" value="2" onclick="operation(2)" class="btn number-key">
+                <input type="button" value="3" onclick="operation(3)" class="btn">
+                <input type="button" value="+" onclick="operation('+')" class="btn_outline_primary">
+            </div>
+            <div>
+                <input type="button" value="-/+" onclick="operation('-/+')" class="btn_outline_primary">
+                <input type="button" value="0" onclick="operation(0)" class="btn number-key">
+                <input type="button" value="." onclick="operation('.')" class="btn">
+                <input type="button" value="=" onclick="show_final()" class="btn  btn_primary ">
+            </div>
+        </main>
+    </div>
+</body>
+
+<script type="module">
+    import styles from './assets/styles/index.module.scss'
+    document.querySelectorAll(".btn_primary").forEach(element => element.className = styles.btn_primary)
+    document.querySelectorAll(".btn").forEach(element => element.className = styles.btn_base)
+    document.querySelector(".prev_num").className = styles.prev_num
+    document.querySelector(".result_input_container").className = styles.result_input_container
+    document.querySelector(".cal_container").className = styles.cal_container
+    document.querySelector(".eghamat24_logo_container").className = styles.eghamat24_logo_container
+    document.querySelectorAll(".btn_outline_primary").forEach(element => element.className = styles.btn_outline_primary)
+    document.querySelectorAll("[type=text]").forEach(element => element.className = styles.input_base)
+    document.querySelectorAll(".math-key").forEach(element => element.className = styles.btn_base)
+</script>
+<script src="scripts.js"></script>
+</html>
