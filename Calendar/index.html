@@ -8,13 +8,17 @@
 <body>
 <div class="calendar-container">
     <header>
-        <b>
+        <b id="Last-month-arrow" onclick="lastMonth()">
             &#8672;
         </b>
-        <strong>
-            January 2020
-        </strong>
-        <b>
+        <div class="title-container">
+            <strong id="Title-Date">
+                January 2020
+            </strong>
+            <small id="Refresh-Date" onclick="refreshDate()">&#8634;</small>
+            
+        </div>
+        <b id="Next-month-arrow" onclick="nextMonth()">
             &#8674;
         </b>
     </header>
@@ -29,6 +33,15 @@
                 <th>Thu</th>
                 <th>Fri</th>
                 <th>Sat</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>

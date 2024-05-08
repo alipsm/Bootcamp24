@@ -31,11 +31,42 @@ body{
     padding-bottom: 20px;
 }
 
-.calendar-container table td{
+.calendar-container table [data-content]{
     text-align: center;
-    padding: 5px;
+    /* padding: 5px; */
+    height: 40px;
+    width: 40px;
+    box-sizing: content-box;
     font-size: 1.2em;
+    border-radius: 100%;
+    transition: all linear 200ms;
+    cursor: pointer;
 }
+
+.calendar-container .title-container{
+    position: relative;
+}
+
+.calendar-container .title-container #Refresh-Date{
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+    cursor: pointer;
+    transition: opacity ease-out 400ms;
+}
+
+.calendar-container .title-container .refresh-date:hover{
+    opacity: .7;
+}
+
+.calendar-container table td[data-content]:hover {
+    background-color: #F0535D;
+}
+
+.calendar-container table td[class="current-day"]{
+    background-color: #F0535D;
+}
+
 
 .calendar-container .logo-container{
     display: flex;
@@ -43,4 +74,23 @@ body{
     
     width: 100%;
     padding: 15px 0px;
+    opacity: 0;
+    animation: show_effect ease 1s 1s forwards;
+}
+
+#Last-month-arrow , #Next-month-arrow {
+    cursor: pointer;
+}
+
+
+@keyframes show_effect {
+    from {
+        opacity: 0;
+        /* transform: translateX(100px); */
+    }
+
+    to {
+        opacity: 1;
+        /* transform: translateX(0px); */
+    }
 }
