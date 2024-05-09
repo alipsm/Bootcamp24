@@ -10,3 +10,21 @@
 </p>
 <p lign="center">Created by: Vite, Sass, Js</p>
 
+<hr/>
+
+</p>
+> Task 2, Calendar
+<p align="center">
+<img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/calendar.png" width="300">
+</p>
+<p lign="center">Created by: Html, Css, Js</p>
+
+<hr/>
+
+</p>
+> Task 2, Modal
+<p align="center">
+<img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/modal.png" width="300">
+</p>
+<p lign="center">Created by: Html, Css, Js</p>
+
