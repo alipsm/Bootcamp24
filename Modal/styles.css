@@ -1,0 +1,116 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    height:100vh;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#Message{
+    display: none;
+    padding: 10px 15px;
+    background-color: #000000cb;
+    border-radius: 9px;
+    color: rgb(0, 255, 0);
+}
+
+
+/* btn styles */
+.btn-style{
+    padding: 1em 3em;
+    font-size: 1.3em;
+    color: white;
+    border:none;
+    background-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity ease-out 200ms;
+}
+
+.btn-style:hover{
+    opacity: .8;
+}
+
+.btn-success{
+    background-color: green;
+}
+
+
+/* modal styles */
+#Modal{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    transition: opacity ease 400ms;
+    opacity: 0;
+}
+
+#modal .container{
+    padding: 24px;
+    background-color: #373C45;
+    border-radius: 12px;
+}
+
+
+/* Banner styles */
+#modal header img{
+    margin: auto;
+    display: inline-block;
+    opacity: 0;
+    animation: show_effect ease 500ms 500ms forwards;
+}
+
+#modal header{
+    display: flex;
+    justify-content: center;
+    padding:15px 0px;
+    width: 100%;
+}
+
+/* Madal info */
+#modal main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 8px;
+}
+
+/* Modal footer */
+#modal footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+@keyframes show_effect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #root {
+        font-size: 9px;
+    }
+  }
