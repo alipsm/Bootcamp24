@@ -1,0 +1,99 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Map{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 9px;
+    border: 10px dashed #F0535D;
+    outline: 10px solid #373C45 ;
+    background-color:antiquewhite;
+    background-position:center;
+    background-size:200px;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+}
+
+main{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+
+.logo-container{
+    box-sizing:border-box;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom:-70px;
+}
+
+.logo-container img{
+    background-color: #373C45;
+    padding: 10px 15px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+
+#Plane{
+    position: absolute;
+    background: url("./assets/img/plane.png");
+    background-position:center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+}
+
+
+.rocket{
+    position: absolute;
+    background: url("./assets/img/vaccine.png");
+    background-position:center;
+    background-size: cover;
+    width: 30px;
+    height: 40px;
+    bottom: 10px;
+    animation: move_up linear 5s 0s forwards;
+}
+
+.virus{
+    position: absolute;
+    background: url("./assets/img/virus.png");
+    background-position:center;
+    background-size: cover;
+    width: 30px;
+    height: 40px;
+    top: 30px;
+    animation: move_down linear 5s 0s forwards;
+}
+
+@keyframes move_down {
+    to {
+        top: 550px;
+        display: none;
+    }
+}
+
+
+@keyframes move_up {
+    to {
+        bottom: 500;
+        display: none;
+    }
+}
+
+
+
+
