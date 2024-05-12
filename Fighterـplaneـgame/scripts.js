@@ -20,7 +20,7 @@ class Plane {
         setInterval(() => {
             this.fireRocket()
             this.removeAdditionalRockets()
-        }, 1000);
+        }, 200);
     }
 
     #updatePlanePoints() {
@@ -100,7 +100,7 @@ class Virus {
         setInterval(() => {
             this.fire()
             this.#removeAdditionalViruses()
-        }, 500);
+        }, 300);
     }
 
     #removeAdditionalViruses() {
@@ -140,7 +140,7 @@ class DI {
         setInterval(async () => {
             this.updateNodes()
             await this.checkVirusDestruction()
-        }, 300);
+        }, 200);
     }
 
     updateNodes() {
@@ -151,7 +151,7 @@ class DI {
         this.#nodes[0].forEach(rocket => {
             this.#nodes[1].forEach(virus => {
                 let distanceElements = this.distanceCalculation(virus, rocket)
-                if (distanceElements < 30) {
+                if (distanceElements < 35) {
                     virusClass.removeViruse(virus)
                     planeClass.removeRocket(rocket)
                 }
