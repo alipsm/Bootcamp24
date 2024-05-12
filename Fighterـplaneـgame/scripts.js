@@ -20,7 +20,7 @@ class Plane {
         setInterval(() => {
             this.fireRocket()
             this.removeAdditionalRockets()
-        }, 200);
+        }, 500);
     }
 
     #updatePlanePoints() {
