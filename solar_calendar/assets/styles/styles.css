@@ -20,9 +20,11 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 1.5em;
+    padding-bottom: 10px;
 }
 
 .calendar-container table{
+    padding-top: 10px;
     width: 100%;
 }
 
