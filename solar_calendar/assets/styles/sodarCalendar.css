@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.calendar-container{
+    position: relative;
+    width: 400px;
+    box-shadow: 8px 3px 22px rgba(0, 0, 0, 0.5);
+    background-color: #373C45;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.calendar-container header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.calendar-container table{
+    width: 100%;
+}
+
+.calendar-container table [data-content] span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2em;
+    border-radius: 100%;
+    transition: all linear 200ms;
+    cursor: pointer;
+}
+
+.calendar-container .title-container{
+    position: relative;
+}
+
+.calendar-container .title-container #Refresh-Date{
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+    cursor: pointer;
+    transition: opacity ease-out 400ms;
+}
+
+.calendar-container .title-container .refresh-date:hover{
+    opacity: .7;
+}
+
+.calendar-container table td[data-content] span:hover {
+    background-color: #F0535D;
+}
+
+.calendar-container table td[class="current-day"] span{
+
+    background-color: #F0535D;
+}
+
+
+.calendar-container .logo-container{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    padding: 15px 0px;
+    opacity: 0;
+    animation: show_effect ease 1s 1s forwards;
+}
+
+#Last-month-arrow , #Next-month-arrow {
+    cursor: pointer;
+}
+
+
+@keyframes show_effect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
