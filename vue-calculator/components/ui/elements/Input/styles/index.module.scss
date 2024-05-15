@@ -1,0 +1,40 @@
+$primary: #1565C0;
+$dark: #141518;
+
+.input_base{
+    box-shadow: 5px 5px 10px black;
+    background-color:beige;
+    border-radius: 13px;
+    font-size: 30px;
+    cursor: default;
+    outline: none;
+    color: $dark ;
+    margin: auto;
+    padding: 5px;
+    height: 70px;
+    width: 100%;
+}
+
+.result_input_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    span{
+        position: absolute;
+        right: -10%;
+        color: #ddd;
+        font-size: 2rem;
+    }
+}
+
+.prev_num{
+    position: relative;
+    margin-right: auto;
+    direction: rtl;
+    color: #ddd;
+    height: 20px;
+    right: 20%;
+    top: -5px;
+}

@@ -1,0 +1,36 @@
+$primary: #1565C0;
+$dark: #141518;
+
+@mixin base_btn($bg: $dark) {
+    box-shadow: 5px 5px 10px black;
+    background-color: $bg;
+    border-radius: 16px;
+    font-size: 30px;
+    color: white !important;
+    width: 70px;
+    height: 70px;
+    margin: 4px;
+    transition: all ease 100ms;
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        box-shadow: none;
+        border: 1px solid $primary;
+        transform: translate(5px,5px)
+    }
+}
+
+.btn_base {
+    @include base_btn;
+}
+
+.btn_primary {
+    @include base_btn($primary);
+}
+
+.btn_outline_primary {
+    @include base_btn($dark);
+    border: 1px solid $primary !important;
+}

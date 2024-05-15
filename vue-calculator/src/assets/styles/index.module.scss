@@ -1,0 +1,53 @@
+$primary: #1565C0;
+$dark: #141518;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.cal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #17181C;
+    margin: auto;
+    width:340px;
+    
+}
+
+
+
+
+
+
+
+.eghamat24_logo_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    img{
+        opacity: 0;
+        width: 100%;
+        animation: show_effect ease 1s 1s forwards;
+        @keyframes show_effect {
+            from {
+                opacity: 0;
+                /* transform: translateX(100px); */
+            }
+        
+            to {
+                opacity: 1;
+                /* transform: translateX(0px); */
+            }
+        }
+    }
+}
