@@ -37,3 +37,13 @@
 </p>
 <p lign="center">Created by: Html, Css, Js</p>
 
+<hr/>
+
+</p>
+> Task 2, solar calendar
+<p align="center">
+<img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/solarCalendar" width="300">
+</p>
+<p lign="center">Created by: Html, Css, Js</p>
+<span>Hint:open with Live Server</span>
+
