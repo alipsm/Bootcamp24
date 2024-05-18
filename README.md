@@ -3,7 +3,7 @@
 <h3 align="center">Task 1, Calculator</h3>
 <br/>
 
-Calculator
+> Calculator
 <p align="center">
   
 <img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/calculator.png" width="300">
@@ -13,7 +13,8 @@ Calculator
 <hr/>
 
 </p>
-Calendar
+
+> Calendar
 <p align="center">
 <img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/calendar.png" width="300">
 </p>
@@ -22,7 +23,8 @@ Calendar
 <hr/>
 
 </p>
-Modal
+
+> Modal
 <p align="center">
 <img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/modal.png" width="300">
 </p>
@@ -31,7 +33,8 @@ Modal
 <hr/>
 
 </p>
-Fighter plane
+
+> Fighter plane
 <p align="center">
 <img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/fighterPlane.png" width="300">
 </p>
@@ -40,7 +43,8 @@ Fighter plane
 <hr/>
 
 </p>
-solar calendar
+
+> solar calendar
 <p align="center">
 <img src="https://raw.githubusercontent.com/alipsm/Bootcamp24/archive/solarCalendar.png" width="300">
 </p>
